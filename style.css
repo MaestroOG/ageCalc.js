@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #000046, #1CB5E0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #000046, #1CB5E0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    padding: 10px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.calculator h1 {
+    font-size: 60px;
+}
+
+.calculator h1 span {
+    color: #f5f543;
+}
+
+.input-box {
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-box button {
+    background-color: #f5f543;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 20px;
+}
+
+#result span {
+    color: #f5f543;
+}
+
+@media only screen and (max-width: 425px) {
+    .calculator {
+        text-align: center;
+    }
+
+    .input-box,
+    #result,
+    .calculator h1 {
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        position: relative;
+        right: 40px;
+    }
+}
